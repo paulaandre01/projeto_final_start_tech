@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.1.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+    
+    <title>JobsNet</title>
+
+    <style>
+      main{
+        margin-top: 50px;
+        background-color: black;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          transform: translateY(-50%);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      main .content{
+          flex-basis: 50%;
+      }
+
+      main .content h2{
+        margin-left: 100px;
+
+        color: white;
+        text-transform: uppercase;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+      }
+
+      main .content p{
+        margin-left: 100px;
+
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        line-height: 32px;
+      }
+
+      main .img{
+          flex-basis: 50%;
+      }
+      main img{
+          height: 100%;
+          width: 100%;
+      }
+      main .btn{
+        margin-left: 150px;
+          background: chartreuse;
+          padding: 10px 30px;
+          color: #fff;
+          border-radius: 30px;
+      }
+      @media (max-width: 540px ){
+          nav{
+              padding: 20px;
+          }
+          .menu{
+              display: none;
+          }
+          main{
+              padding: 30px;
+          }
+
+          main .content{
+              order: 2;
+              flex-basis: 100%;
+              width: 100%;
+              margin-bottom: 2rem;
+          }
+          main .content h2{
+          font-size: 2rem;
+          }
+          main .content p{
+              font-size: 14px;
+              margin-bottom: 1rem;
+          }
+          main .img{
+             flex-basis: 100%;
+          }
+      }
+  </style>
+</head>
+
+<body>
+    <header>
+        <section class="cabecalho">
+            <div class="logo">
+            <img class="logo" src="img/JobsDOTnet_Green.png" alt="LOGO">
+            </div>
+            <nav>
+                <a href="#home_id">Home</a>
+                <a href="#empresas-que-trabalham-conosco">Empresas</a>
+                <a href="#about_id">Sobre Nós</a>
+                <a href="#main-container">Inscreva-se</a>
+            </nav>        
+            </div>
+        </section>
+    </header>
+
+    <section id="home_id" class="chamativo">
+      <main class="wrap">
+        <div class="content">
+            <h2>Jobs.Net</h2>
+            <p>O primeiro passo para o emprego dos seus sonhos.</p>
+            <a href="#main-container" class="btn">Cadastre-se Agora</a>
+        </div>
+        <div class="img"><img src="./img/a.png" alt="aaa" srcset=""></div>
+    </main>
+        </div>
+    </section>
+
+    <section id="empresas-que-trabalham-conosco" class="empresas-que-trabalham-conosco">
+      <h1 class="empresas-parceiras">Empresas Parceiras</h1>
+      <ul class="grid">
+        <li>
+          <figure class="grid__figure">
+            <img class="img_empresa" src="./img/mini1.png" alt="">
+
+        </li>
+        <li>
+          <figure class="grid__figure">
+            <img class="img_empresa" src="./img/mini2.png" alt="">
+
+        </li>
+        <li>
+          <figure class="grid__figure">
+            <img class="img_empresa" src="./img/mini3.png" alt="">
+
+        </li>
+        <li>
+          <figure class="grid__figure">
+            <img class="img_empresa" src="./img/mini4.png" alt="">
+
+        </li>
+        <li>
+          <figure class="grid__figure">
+            <img class="img_empresa" src="./img/mini5.png" alt="">
+
+        </li>
+        <li>
+          <figure class="grid__figure">
+            <img class="img_empresa" src="./img/mini6.png" alt="">
+
+      </ul>
+
+    </section>
+
+    <section>
+        <div id="about_id" class="about">
+            <div class="inner-section">
+                <h1>Sobre Nós</h1>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Doloribus velit ducimus, enim inventore earum, eligendi 
+                    nostrum pariatur necessitatibus eius dicta a voluptates sit 
+                    deleniti autem error eos totam
+                     nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+                </p>
+                <div class="skills">
+                    <button><a class="sa" id="sa" href="mailto:email@email.de">Entre em contato</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="formulario">
+            <div id="main-container">
+                <h1>Cadastre-se para acessar as vagas</h1>
+                
+                <form id="register-form" action="connect.php" method="post">
+                  
+                  <div class="full-box spacing">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+                  </div>
+                  
+                  <div class="half-box spacing">
+                    <label for="lastname">Data de Nascimento</label>
+                    <input type="date" name="date" id="date" data-required data-require>
+                  </div>
+                       
+                  <div class="half-box spacing">
+                    <label for="sexo">Sexo:</label>
+                      <select type="select" id="sexo" name="sexo">
+                        <label class="half-box spacing" for="cars">Choose a car:</label>
+                        <option name="feminino" value="feminino">Feminino</option>
+                        <option name="masculino" value="masculino">Masculino</option>
+                        <option name="outro" value="outro">Outro</option>
+                      </select>      
+                  </div>
+            
+                  <div class="half-box spacing">
+                    <label for="Telefone">Telefone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Digite seu Telefone" data-required>
+                  </div> 
+            
+                  <div class="half-box spacing">
+                    <label for="cargo-pretendido">Cargo Pretendido</label>
+                    <input type="text" name="cargo-pretendido" id="cargo-pretendido" placeholder="Digite o cargo pretendido" data-equal="text">
+                  </div>
+            
+                  <div class="full-box">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+                  </div>
+            
+                  <div class="half-box spacing">
+                    <label for="lastname">Endereço</label>
+                    <input type="tel" name="endereco" id="tel" placeholder="Digite seu Telefone" data-password-validate data-required>
+                  </div> 
+            
+                  <div class="half-box spacing">
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" placeholder="Digite o cargo pretendido" data-equal="text">
+                  </div>
+            
+                  <div class="half-box spacing">
+                    <label for="lastname">Bairro</label>
+                    <input type="tel" name="bairro" id="bairro" placeholder="Digite seu Telefone" data-password-validate data-required>
+                  </div> 
+            
+                  <div class="half-box spacing">
+                    <label for="passconfirmation">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Digite o cargo pretendido" data-equal="text">
+                  </div>
+            
+                  <h2 class="full-box"> Documentos</h2>
+            
+            
+                  <div class="half-box spacing">
+                    <label for="lastname">Identidade</label>
+                    <input type="tel" name="identidade" id="identidade" placeholder="Digite seu Telefone" data-password-validate data-required>
+                  </div> 
+            
+                  <div class="half-box spacing">
+                    <label for="passconfirmation">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" data-equal="text">
+                  </div> 
+            
+                  <div class="half-box spacing">
+                    <label for="sexo">Possui Habitação?</label>
+                      <select type="select" id="habilitacao" name="habilitacao">
+                        <label class="half-box spacing" for="cars">Choose a car:</label>
+                        <option name="sima" value="sima">Sim a A</option>
+                        <option name="simb" value="simb">Sim, a B</option>
+                        <option name="simab" value="simab">Sim, a A e a B</option>
+                        <option name="simcd" value="simcd">Sim, C ou D</option>
+                        <option name="nao" value="nao">Não</option>
+            
+                      </select>      
+                  </div>
+            
+                  <div class="half-box spacing">
+                    <label for="sexo">Possui Veiculo?</label>
+                      <select type="select" id="cars" name="veiculo">
+                        <label class="half-box spacing" for="cars">Choose a car:</label>
+                        <option name="simm" value="simm">Sim, uma Moto</option>
+                        <option name="simc" value="simc">Sim, um Carro</option>
+                        <option name="simcm" value="sumcm">Sim, um Carro e uma Moto</option>
+                        <option name="naonen" value="naonen">Não, nenhum</option>
+                      </select>      
+                  </div>
+            
+                  <p id="leia-os-termos">Leia os Termos Antes de Assinar</p>
+                  <div class="full-box"> 
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement" id="agreement-label">Eu li e aceito os<a id="termos-de-uso" class="termos-de-uso" href="http://www.google.com.br" target="_blank">Termos de Uso</a></label>
+                  </div>
+                  
+                  <div class="half-box">
+                    <input id="btn-reset" type="reset" value="Redefinir">
+                  </div>
+                  
+                  <div class="full-box">
+                    <input id="btn-submit" type="submit" value="Registrar">
+                  </div>
+            
+                </form>
+              </div>
+              <p class="error-validation template"></p>
+              <script src="js/scripts.js"></script>
+        </div>
+    </section>
+
+    <section>
+      <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#home_id">Home</a></li>
+                <li class="list-inline-item"><a href="#empresas-que-trabalham-conosco">Empresa</a></li>
+                <li class="list-inline-item"><a href="#about_id">Sobre Nós</a></li>
+                <li class="list-inline-item"><a href="#main-container">Inscreva-se</a></li>
+            </ul>
+            <p class="copyright">Paula André © 2021</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </section>
+
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

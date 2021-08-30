@@ -1,0 +1,408 @@
+/* base */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(61, 61, 61);
+    padding: 30px 30px 30px 30px;
+    margin-top: -50px;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* cabeçalho */
+nav{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: white;
+}
+
+a:hover:after{
+    width: 100%;
+    
+}
+
+.logo img{
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+/* chamativo */
+
+.chamativo {
+    margin-top: 8%;
+    width: 1080px;
+    height: 608px;  
+}
+
+/* sobre nós */
+.about{
+    background: url(img/about-us.jpg) no-repeat left;
+    background-size: 100%;
+    background-color: black;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color: whitesmoke;
+    padding: 140px;
+    box-shadow: 130px 12px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: chartreuse;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: chartreuse;
+}
+
+/* EMPRESAS QUE TRABLHAM CONOSCO*/
+.empresas-que-trabalham-conosco {
+  background-color: white;
+  color: black;
+  padding-top: 10px;;
+}
+
+/* FORMULARIO */
+
+input, label {
+    display: block;
+    outline: none;
+    width: 100%;
+}
+  
+a {
+  color: chartreuse;
+}
+  
+body {
+  padding-top: 5vh;
+  background-size: cover;
+  background-position-y: -150px;
+}
+  
+/* form */
+.formulario {
+  padding-top: 5vh;
+  background-image: url("./img/mario-gogh-VBLHICVh-lI-unsplash.jpg");
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+#main-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 25px;
+}
+  
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+  
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+  
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+  
+.spacing {
+  margin-right: 2.5%;
+}
+  
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+  
+select {
+  font-weight: bold;
+  font-size: .8rem;
+}
+  
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+  
+input:focus {
+    border-color: chartreuse;
+  }
+  
+  input[type="submit"] {
+    background-color: chartreuse;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  input[type="reset"] {
+    background-color: chartreuse;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  #agreement {
+    margin-right: 5px;
+    font-size: 15px
+  }
+  
+  #agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+  }
+
+#termos-de-uso{
+  font-size: 15px; 
+  text-decoration: underline;
+}
+
+#termos-de-uso:hover{
+  color: grey;
+}
+
+
+  
+  .error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+  }
+  
+  .template {
+    display: none;
+  }
+
+  .footer-basic {
+    padding:40px 0;
+    background-color:rgb(61, 61, 61);
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    color: white;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    color: chartreuse;
+    opacity:1;
+  }
+  
+
+  
+
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sa {
+  color:white;
+
+}
+.sa:hover{
+  color:grey;
+}
+
+#leia-os-termos{
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.grid {
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column; 
+  grid-auto-columns: 10%; 
+  grid-gap: 1em;
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 2em 1em;
+  background: white;
+  
+  @media all and (min-width: 600px) {
+    grid-auto-flow: initial; 
+    grid-template-columns: repeat(auto-fit, minmax(auto,10em)); 
+    justify-content: center; 
+  }
+}  
+  
+.grid__figure {
+      display: grid;
+      grid-template-rows: 20em 1fr; 
+      grid-gap: 1em;
+
+}
+
+.img_empresa {
+      width: 100%;
+      height: 100%;
+      object-fit:contain; 
+    
+}
+
+.empresas-parceiras{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsivo */
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
